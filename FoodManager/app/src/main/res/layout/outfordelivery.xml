@@ -1,0 +1,280 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Outfordelivery">
+
+    <!-- Out For Delivery Text -->
+    <TextView
+        android:id="@+id/out_for_delivery_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Out For Delivery"
+        android:textSize="40sp"
+        android:textColor="#FF000000"
+        android:fontFamily="Yeon Sung"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="17dp"/>
+
+    <!-- First Item -->
+    <RelativeLayout
+        android:id="@+id/container1"
+        android:layout_width="347dp"
+        android:layout_height="103dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="67dp">
+
+        <!-- First Item Content -->
+        <RelativeLayout
+            android:layout_width="347dp"
+            android:layout_height="103dp">
+
+            <!-- Background -->
+            <RelativeLayout
+                android:id="@+id/first_item_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFFFF"
+                android:padding="16dp"
+                android:clipToPadding="true"
+                android:elevation="8dp"
+                android:outlineProvider="background">
+
+                <!-- Customer Name -->
+                <TextView
+                    android:id="@+id/customer_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name"
+                    android:textSize="15sp"
+                    android:textColor="#FF09041B"
+                    android:fontFamily="Yeon Sung"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="18dp"/>
+
+                <!-- Payment -->
+                <TextView
+                    android:id="@+id/payment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment"
+                    android:textSize="14sp"
+                    android:textColor="#FF3B3B3B"
+                    android:fontFamily="Lato"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="42dp"
+                    android:alpha="0.3"/>
+
+                <!-- Status -->
+                <TextView
+                    android:id="@+id/status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Received"
+                    android:textSize="19sp"
+                    android:textColor="#FFE75353"
+                    android:fontFamily="Lato"
+                    android:layout_marginLeft="32.45dp"
+                    android:layout_marginTop="64dp"/>
+
+                <!-- Delivered Text -->
+                <RelativeLayout
+                    android:id="@+id/delivered_text_container"
+                    android:layout_width="73dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="267dp"
+                    android:layout_marginTop="23dp">
+
+                    <TextView
+                        android:id="@+id/delivered_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivered"
+                        android:textSize="16sp"
+                        android:textColor="#FF000000"
+                        android:fontFamily="Lato"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- Second Item -->
+    <RelativeLayout
+        android:id="@+id/container2"
+        android:layout_width="347dp"
+        android:layout_height="103dp"
+        android:layout_below="@id/container1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp">
+
+        <!-- Second Item Content -->
+        <RelativeLayout
+            android:layout_width="347dp"
+            android:layout_height="103dp">
+
+            <!-- Background -->
+            <RelativeLayout
+                android:id="@+id/second_item_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFFFF"
+                android:padding="16dp"
+                android:clipToPadding="true"
+                android:elevation="8dp"
+                android:outlineProvider="background">
+
+                <!-- Customer Name -->
+                <TextView
+                    android:id="@+id/customer_name_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name"
+                    android:textSize="15sp"
+                    android:textColor="#FF09041B"
+                    android:fontFamily="Yeon Sung"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="18dp"/>
+
+                <!-- Payment -->
+                <TextView
+                    android:id="@+id/payment_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment"
+                    android:textSize="14sp"
+                    android:textColor="#FF3B3B3B"
+                    android:fontFamily="Lato"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="42dp"
+                    android:alpha="0.3"/>
+
+                <!-- Status -->
+                <TextView
+                    android:id="@+id/status_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Received"
+                    android:textSize="19sp"
+                    android:textColor="#FF56E753"
+                    android:fontFamily="Lato"
+                    android:layout_marginLeft="32.45dp"
+                    android:layout_marginTop="64dp"/>
+
+                <!-- Delivered Text -->
+                <RelativeLayout
+                    android:id="@+id/delivered_text_container2"
+                    android:layout_width="73dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="267dp"
+                    android:layout_marginTop="23dp">
+
+                    <TextView
+                        android:id="@+id/delivered_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivered"
+                        android:textSize="16sp"
+                        android:textColor="#FF000000"
+                        android:fontFamily="Lato"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- Third Item -->
+    <RelativeLayout
+        android:id="@+id/container3"
+        android:layout_width="347dp"
+        android:layout_height="103dp"
+        android:layout_below="@id/container2"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp">
+
+        <!-- Third Item Content -->
+        <RelativeLayout
+            android:layout_width="347dp"
+            android:layout_height="103dp">
+
+            <!-- Background -->
+            <RelativeLayout
+                android:id="@+id/third_item_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFFFF"
+                android:padding="16dp"
+                android:clipToPadding="true"
+                android:elevation="8dp"
+                android:outlineProvider="background">
+
+                <!-- Customer Name -->
+                <TextView
+                    android:id="@+id/customer_name_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name"
+                    android:textSize="15sp"
+                    android:textColor="#FF09041B"
+                    android:fontFamily="Yeon Sung"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="18dp"/>
+
+                <!-- Payment -->
+                <TextView
+                    android:id="@+id/payment_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment"
+                    android:textSize="14sp"
+                    android:textColor="#FF3B3B3B"
+                    android:fontFamily="Lato"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="42dp"
+                    android:alpha="0.3"/>
+
+                <!-- Status -->
+                <TextView
+                    android:id="@+id/status_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Received"
+                    android:textSize="19sp"
+                    android:textColor="#FFE75353"
+                    android:fontFamily="Lato"
+                    android:layout_marginLeft="32.45dp"
+                    android:layout_marginTop="64dp"/>
+
+                <!-- Delivered Text -->
+                <RelativeLayout
+                    android:id="@+id/delivered_text_container3"
+                    android:layout_width="73dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="267dp"
+                    android:layout_marginTop="23dp">
+
+                    <TextView
+                        android:id="@+id/delivered_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivered"
+                        android:textSize="16sp"
+                        android:textColor="#FF000000"
+                        android:fontFamily="Lato"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

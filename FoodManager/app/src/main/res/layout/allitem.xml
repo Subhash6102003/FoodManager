@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Moron"
+    tools:context=".Uploaditem">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Restaurant Name -->
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:text="Restaurant Name"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <!-- Item List -->
+        <LinearLayout
+            android:id="@+id/item_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurant_name"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical" />
+
+        <!-- Add New Item Container -->
+        <LinearLayout
+            android:id="@+id/item2_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_list"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Item Name -->
+            <EditText
+                android:id="@+id/item2_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Item Name"
+                android:minHeight="48dp"
+                android:textColor="@color/Text_Color"
+                android:textColorHint="@color/Text_Color"
+                android:textSize="18sp" />
+
+            <!-- Item Description -->
+
+            <!-- Item Price -->
+            <EditText
+                android:id="@+id/item2_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Item Description"
+                android:minHeight="48dp"
+                android:textColor="@color/Text_Color"
+                android:textColorHint="@color/Text_Color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/item2_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Price (Rupees)"
+                android:minHeight="48dp"
+                android:textColor="@color/Text_Color"
+                android:textColorHint="@color/Text_Color"
+                android:textSize="16sp" />
+
+            <!-- Upload Image Button -->
+            <Button
+                android:id="@+id/btn_upload_image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/Text_Color"
+                android:backgroundTint="@color/Text_Color"
+                android:text="Upload Image"
+                app:iconTint="@color/Moron"
+                app:rippleColor="@color/Text_Color"
+                app:strokeColor="@color/Text_Color" />
+
+            <!-- Selected Image -->
+            <ImageView
+                android:id="@+id/selected_image2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Add More Items Button -->
+        <Button
+            android:id="@+id/btn_add_more_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item2_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/Text_Color"
+            android:text="Add More Items" />
+        <Button
+            android:id="@+id/btn_Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_add_more_items"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/Text_Color"
+            android:text="Submit" />
+
+    </RelativeLayout>
+</ScrollView>

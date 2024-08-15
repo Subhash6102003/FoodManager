@@ -1,0 +1,5 @@
+<!-- res/values/dimens.xml -->
+<resources>
+    <dimen name="item_field_margin">8dp</dimen>
+    <dimen name="image_size">100dp</dimen>
+</resources>

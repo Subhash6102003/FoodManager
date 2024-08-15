@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Waves Of Food -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waves Of Food"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Sign Up Here For Your Admin Dashboard -->
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up Here For Your\nAdmin Dashboard"
+            android:textSize="16sp"
+            android:textColor="#53E88B"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Name of Owner -->
+        <EditText
+            android:id="@+id/nameOfOwnerEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of Owner"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Name of Restaurant -->
+        <EditText
+            android:id="@+id/nameOfRestaurantEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of Restaurant"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email or Phone Number -->
+        <EditText
+            android:id="@+id/emailOrPhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email or Phone Number"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Choose Your Location -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Location"
+            android:textSize="14sp"
+            android:textColor="#53E88B"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Location -->
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jaipur"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Create Account Button -->
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-light"
+            android:background="#53E88B"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Already Have An Account? -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have An Account?"
+            android:textSize="10sp"
+            android:textColor="#53E88B"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Design By NeatRoots -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Design By NeatRoots"
+            android:textSize="16sp"
+            android:textColor="#53E88B"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

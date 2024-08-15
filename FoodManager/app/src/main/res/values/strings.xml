@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Food Manager</string>
+    <string name="textview">TextView</string>
+    <string name="textview1">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name</string>
+    <string name="name1">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="feel_the_meel_by_byriyani_wheel">Feel The Meel By Biryani Wheel</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_sign">Login</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_mobile_no">Enter Mobile no</string>
+    <string name="enter_password">Enter password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_1">Sign Up</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

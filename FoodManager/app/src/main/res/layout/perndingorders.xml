@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clipToPadding="false"
+    tools:context=".Pendongorders">
+
+    <!-- Pending Orders -->
+    <TextView
+        android:id="@+id/pending_orders_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending Orders"
+        android:textSize="40sp"
+        android:textColor="#FF000000"
+        android:fontFamily="Yeon Sung"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <!-- First Item -->
+    <RelativeLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pending_orders_text"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- First Item Background -->
+        <RelativeLayout
+            android:id="@+id/first_item_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:clipToPadding="true">
+
+<!--            android:background="@drawable/shape_item_background"-->
+            <!-- Customer Image -->
+            <ImageView
+                android:id="@+id/customer_image"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="21dp"/>
+
+<!--            android:src="@drawable/customer_image_placeholder"-->
+            <!-- Customer Name -->
+            <TextView
+                android:id="@+id/customer_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Customer"
+                android:textSize="15sp"
+                android:textColor="#FF09041B"
+                android:fontFamily="Yeon Sung"
+                android:layout_toEndOf="@id/customer_image"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"/>
+
+            <!-- Quantity -->
+            <TextView
+                android:id="@+id/quantity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="12sp"
+                android:textColor="#FF09041B"
+                android:fontFamily="Yeon Sung"
+                android:layout_toEndOf="@id/customer_image"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"/>
+
+            <!-- Quantity Value -->
+            <TextView
+                android:id="@+id/quantity_value_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="19sp"
+                android:textColor="#FF53E88B"
+                android:fontFamily="Lato"
+                android:layout_toEndOf="@id/quantity_text"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="56dp"/>
+
+            <!-- Accept Button -->
+            <RelativeLayout
+                android:id="@+id/accept_button_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp">
+
+<!--                android:background="@drawable/shape_button_background"-->
+                <TextView
+                    android:id="@+id/accept_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accept"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFFFF"
+                    android:fontFamily="Yeon Sung"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- Second Item -->
+    <RelativeLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Second Item Background -->
+        <RelativeLayout
+            android:id="@+id/second_item_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:clipToPadding="true">
+
+<!--            android:background="@drawable/shape_item_background"-->
+            <!-- Customer Image -->
+            <ImageView
+                android:id="@+id/customer_image2"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="21dp"/>
+
+<!--            android:src="@drawable/customer_image_placeholder"-->
+            <!-- Customer Name -->
+            <TextView
+                android:id="@+id/customer_name_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Customer"
+                android:textSize="15sp"
+                android:textColor="#FF09041B"
+                android:fontFamily="Yeon Sung"
+                android:layout_toEndOf="@id/customer_image2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"/>
+
+            <!-- Quantity -->
+            <TextView
+                android:id="@+id/quantity_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="12sp"
+                android:textColor="#FF09041B"
+                android:fontFamily="Yeon Sung"
+                android:layout_toEndOf="@id/customer_image2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"/>
+
+            <!-- Quantity Value -->
+            <TextView
+                android:id="@+id/quantity_value_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="19sp"
+                android:textColor="#FF53E88B"
+                android:fontFamily="Lato"
+                android:layout_toEndOf="@id/quantity_text2"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="56dp"/>
+
+            <!-- Dispatch Button -->
+            <RelativeLayout
+                android:id="@+id/dispatch_button_container2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp">
+
+<!--                android:background="@drawable/shape_button_background"-->
+                <TextView
+                    android:id="@+id/dispatch_button_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dispatch"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFFFF"
+                    android:fontFamily="Yeon Sung"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- Third Item -->
+    <RelativeLayout
+        android:id="@+id/container3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Third Item Background -->
+        <RelativeLayout
+            android:id="@+id/third_item_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:clipToPadding="true">
+
+<!--            android:background="@drawable/shape_item_background"-->
+            <!-- Customer Image -->
+            <ImageView
+                android:id="@+id/customer_image3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="21dp"/>
+
+<!--            android:src="@drawable/customer_image_placeholder"-->
+            <!-- Customer Name -->
+            <TextView
+                android:id="@+id/customer_name_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Customer"
+                android:textSize="15sp"
+                android:textColor="#FF09041B"
+                android:fontFamily="Yeon Sung"
+                android:layout_toEndOf="@id/customer_image3"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"/>
+
+            <!-- Quantity -->
+            <TextView
+                android:id="@+id/quantity_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="12sp"
+                android:textColor="#FF09041B"
+                android:fontFamily="Yeon Sung"
+                android:layout_toEndOf="@id/customer_image3"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"/>
+
+            <!-- Quantity Value -->
+            <TextView
+                android:id="@+id/quantity_value_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textSize="19sp"
+                android:textColor="#FF53E88B"
+                android:fontFamily="Lato"
+                android:layout_toEndOf="@id/quantity_text3"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="56dp"/>
+
+            <!-- Dispatch Button -->
+            <RelativeLayout
+                android:id="@+id/dispatch_button_container3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp">
+
+<!--                android:background="@drawable/shape_button_background"-->
+                <TextView
+                    android:id="@+id/dispatch_button_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dispatch"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFFFF"
+                    android:fontFamily="Yeon Sung"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

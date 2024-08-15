@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bottomNavigationView" type="id" />
+    <item name="delivered_text_container" type="id" />
+    <item name="delivered_text" type="id" />
+    <item name="status_text" type="id" />
+    <item name="payment_text" type="id" />
+    <item name="customer_name_text" type="id" />
+    <item name="first_item_background" type="id" />
+    <item name="item_layout" type="id" />
+</resources>
